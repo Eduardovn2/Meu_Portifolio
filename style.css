@@ -1,0 +1,64 @@
+body, html{
+    overflow-x:hidden ;
+    margin: 0;
+    padding: 0;
+}
+
+.linha_topo{
+    width: 100%;
+    height: 80px;
+    background-color: blue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.developer_eduardo_viana h1{
+    opacity: 0.3;
+    font-size: 8px;
+    position: absolute;
+    background-color: rgba(12, 12, 109, 0.212);
+    border-radius: 10px;
+}
+
+
+
+.nome_superior_container h1{
+    position: absolute;
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: inline-block;
+    position: relative;
+    width: 15%;
+    left: 25%;
+    padding: 1%; 
+    top: 0;
+    
+    background-color: rgba(65, 131, 185, 0.226);
+}
+.nome_superior_container h1:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #000;
+    transition: all 0.3s ease;    
+}
+
+@media screen and (max-width: 768px) {
+    .nome_superior_container h1{
+        position: relative;
+        display: inline-block;
+        font-size: 12px;
+        width: 25%;
+        bottom: 20%;
+        padding:10px ;
+        left: 5%;
+    }
+
+    .developer_eduardo_viana h1{
+        position: absolute;
+        font-size: 7px;
+        top: 10%;
+        opacity: 0.5;
+    }
+
+}
